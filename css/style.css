@@ -73,7 +73,7 @@ p.heading {
     .head {
         width: 1250px;
         top: 50px;
-        position: fixed;
+        position: absolute;
         display: flex;
         justify-content: space-around;
         font-size: x-large;
@@ -81,7 +81,7 @@ p.heading {
 
     .content {
         width: 1250px;
-        height: auto;
+        height: 150%;
         background-color: rgba(243, 242, 242, 0.277);
         position: absolute;
         top: 150px;
@@ -106,7 +106,7 @@ p.heading {
     .head {
         width: 100%;
         top: 25px;
-        position: fixed;
+        position: absolute;
         display: flex;
         justify-content: space-around;
         font-size: large;
@@ -126,7 +126,7 @@ p.heading {
     }
     .content {
         width: 100%;
-        height: auto;
+        height: 150%;
         position: absolute;
         top: 75px;
         display: flex;
