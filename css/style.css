@@ -8,76 +8,141 @@ body {
     display: flex;
     justify-content: center;
 }
-a.menu-option {
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    display: block;
-    border: 3px solid #7923abbe;
-    padding-right: 15px;
-    padding-left: 15px;
-    border-radius: 30px;
-    text-align: center;
-}
-a.menu-option:hover {
-    background-color: #7923ab;
-}
-a#selected {
-    background-color: #7923ab;
-}
-.head {
-    width: 1250px;
-    top: 50px;
-    position: fixed;
-    display: flex;
-    justify-content: space-around;
-    font-size: x-large;
-}
-
-.content {
-    width: 1250px;
-    height: auto;
-    background-color: rgba(243, 242, 242, 0.277);
-    position: absolute;
-    top: 150px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.img-sample {
-    height: 150px;
-    width: 10%;
-}
 p.heading {
     margin-top: 15px;
     font-size:3em;
     color: white;
-	-webkit-animation: tracking-out-contract 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both alternate infinite;
-	        animation: tracking-out-contract 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both alternate infinite;
+    -webkit-animation: tracking-out-contract 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both alternate infinite;
+            animation: tracking-out-contract 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both alternate infinite;
 }
 @-webkit-keyframes tracking-out-contract {
     0% {
-      opacity: 1;
+    opacity: 1;
     }
     50% {
-      opacity: 0.5;
+    opacity: 0.5;
     }
     100% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+    letter-spacing: -0.5em;
+    opacity: 0;
     }
-  }
-  @keyframes tracking-out-contract {
+}
+@keyframes tracking-out-contract {
     0% {
-      opacity: 1;
+    opacity: 1;
     }
     50% {
-      opacity: 0.5;
+    opacity: 0.5;
     }
     100% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+    letter-spacing: -0.5em;
+    opacity: 0;
     }
-  }
+}
+
+
+/* DESKTOP VERSION */
+@media screen and (min-width: 600px) {
+    .slider {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 60%;
+        -webkit-box-shadow: 0px 5px 10px 9px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 0px 5px 10px 9px rgba(34, 60, 80, 0.2);
+        box-shadow: 0px 5px 10px 9px rgba(34, 60, 80, 0.2);
+        border-radius: 10px;
+    }
+
+    a.menu-option {
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+        display: block;
+        border: 3px solid #7923abbe;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-radius: 30px;
+        text-align: center;
+    }
+    a.menu-option:hover {
+        background-color: #7923ab;
+    }
+    a#selected {
+        background-color: #7923ab;
+    }
+    .head {
+        width: 1250px;
+        top: 50px;
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        font-size: x-large;
+    }
+
+    .content {
+        width: 1250px;
+        height: auto;
+        background-color: rgba(243, 242, 242, 0.277);
+        position: absolute;
+        top: 150px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-sample {
+        height: 150px;
+        width: 10%;
+    }
+}
+
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 599px) {
+    a {
+        -webkit-tap-highlight-color: transparent;
+    }
+    .head {
+        width: 100%;
+        top: 25px;
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        font-size: large;
+    }
+    a.menu-option {
+        text-decoration: none;
+        color: white;
+        display: block;
+        border: 2px solid #7923abbe;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-radius: 30px;
+        text-align: center;
+    }
+    a.menu-option:active {
+        background-color: #7923ab;
+    }
+    .content {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 75px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .slider {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 98%;
+        -webkit-box-shadow: 0px 5px 10px 9px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 0px 5px 10px 9px rgba(34, 60, 80, 0.2);
+        box-shadow: 0px 5px 10px 9px rgba(34, 60, 80, 0.2);
+        border-radius: 10px;
+    }
+
+}
   

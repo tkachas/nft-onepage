@@ -1,14 +1,5 @@
 
   
-.slider {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 60%;
-    -webkit-box-shadow: 0px 5px 10px 9px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 5px 10px 9px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 5px 10px 9px rgba(34, 60, 80, 0.2);
-    border-radius: 10px;
-}
   img#carousel {
     display: block;
     width: 100%;
