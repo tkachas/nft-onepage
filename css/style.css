@@ -109,7 +109,7 @@ p.heading {
 
     .content {
         width: 1250px;
-        height: auto;
+        height: 150%;
         background-color: rgba(208, 207, 207, 0.29);
         position: absolute;
         top: 150px;

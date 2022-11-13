@@ -2,6 +2,7 @@ section {
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 
@@ -11,6 +12,7 @@ section {
         width: 100%;
         overflow: hidden;
         border-radius: 10px;
+        -webkit-border-radius: 10px;
     }
   img#carousel {
     display: block;
