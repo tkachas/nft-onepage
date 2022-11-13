@@ -1,15 +1,16 @@
+section {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
 
-  
+
+
+  @media screen and (min-width: 600px) {
   img#carousel {
     display: block;
     width: 100%;
     height:100%;
-  }
-  
-  section {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
   }
   
   article {
@@ -56,3 +57,57 @@
       transform: translateX(-50%);
     }
   }
+}
+
+@media screen and (max-width: 599px) {
+    img#carousel {
+        display: block;
+        width: 100%;
+        height:100%;
+      }
+      
+      article {
+        display: flex;
+        width: 200%;
+        animation: bannermove 20s linear infinite;
+      }
+      
+      article:hover {
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
+      }
+      
+      div.carousel {
+        width: 50%;
+      }
+      
+      ul#carousel {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+      }
+      
+      li#carousel {
+        width: 100%;
+        height: 110px;
+        background: blue;
+      }
+      
+      /* li#carousel:nth-child(2) {
+        background: green;
+      }
+      
+      li#carousel:nth-child(3) {
+        background: yellow;
+      } */
+      
+      @keyframes bannermove {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+}
