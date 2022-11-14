@@ -33,6 +33,8 @@ section {
   
   div.carousel {
     width: 50%;
+    
+    
   }
   
   ul#carousel {
@@ -46,6 +48,10 @@ section {
     width: 100%;
     height: 150px;
     background: blue;
+    /* margin-left:20px; */
+    border-left: 1px solid rgba(46, 46, 46, 0.805);
+    
+    
   }
   
   /* li#carousel:nth-child(2) {
@@ -96,6 +102,8 @@ section {
         width: 100%;
         height: 110px;
         background: blue;
+        border-left: 0.4px solid rgba(46, 46, 46, 0.805);
+        /* margin-left:10px; */
       }
       
       /* li#carousel:nth-child(2) {
