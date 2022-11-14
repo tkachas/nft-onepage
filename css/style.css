@@ -38,6 +38,9 @@ ol#howTo {
 ol li#howToList {
     margin: 5px;
 }
+a.to-top.active:active {
+    opacity: 1;
+}
 
 @-webkit-keyframes tracking-out-contract {
     0% {
