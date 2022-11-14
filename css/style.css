@@ -15,6 +15,7 @@ body {
 }
 p.heading {
     margin-top: 15px;
+    align-self: center;
     font-size:3em;
     color: white;
     -webkit-animation: tracking-out-contract 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both alternate infinite;
@@ -79,6 +80,7 @@ p.heading {
         -moz-box-shadow: 0px 5px 10px 9px rgba(34, 60, 80, 0.2);
         box-shadow: 0px 5px 10px 9px rgba(34, 60, 80, 0.2);
         border-radius: 10px;
+        align-self: center;
     }
 
     a.menu-option {
@@ -109,13 +111,12 @@ p.heading {
 
     .content {
         width: 1250px;
-        height: 150%;
+        height: auto;
         background-color: rgba(208, 207, 207, 0.29);
         position: absolute;
         top: 150px;
         border-radius: 30px;
         display: flex;
-        align-items: center;
         flex-direction: column;
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
@@ -124,6 +125,7 @@ p.heading {
         height: 150px;
         width: 10%;
     }
+
     p#about {
         margin: 30px;
         color: white;
@@ -131,6 +133,11 @@ p.heading {
         text-align: justify;
         font-weight: 500;
         
+    }
+    h1#about {
+        align-self: left;
+        margin-left: 30px;
+        color: white;
     }
 }
 
@@ -183,7 +190,7 @@ p.heading {
     p#about {
         margin: 0px;
         color: white;
-        font-size: 1.2em;
+        font-size: 1.1em;
         text-align: justify;
         font-weight: 500;
         /* background-color: rgba(111, 111, 111, 0.342); */
