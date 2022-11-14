@@ -88,7 +88,7 @@ ol li#howToList {
   }
 
 /* DESKTOP VERSION */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1025px) {
     .slider {
         margin-top: 25px;
         margin-bottom: 25px;
@@ -165,7 +165,7 @@ ol li#howToList {
 
 /* MOBILE VERSION */
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 1024px) {
     a {
         -webkit-tap-highlight-color: transparent;
     }
