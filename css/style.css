@@ -41,6 +41,47 @@ ol li#howToList {
 a.to-top.active:active {
     opacity: 1;
 }
+.cursor {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  opacity: 0;
+  position: absolute;
+  border-radius: 30px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+#cursor-click {
+  animation: cursorClick 0.2s linear;
+}
+@keyframes cursorClick {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+  }
+  50% {
+    opacity: 0.5;
+    width: 15px;
+    height: 15px;
+  }
+  75% {
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    opacity: 0.5;
+    width: 25px;
+    height: 25px;
+  }
+}
+#cursor-grow {
+  background-color: black;
+}
 
 @-webkit-keyframes tracking-out-contract {
     0% {
@@ -91,7 +132,7 @@ a.to-top.active:active {
   }
 
 /* DESKTOP VERSION */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1200px) {
     .slider {
         margin-top: 25px;
         margin-bottom: 25px;
@@ -168,7 +209,7 @@ a.to-top.active:active {
 
 /* MOBILE VERSION */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1199px) {
     a {
         -webkit-tap-highlight-color: transparent;
     }
